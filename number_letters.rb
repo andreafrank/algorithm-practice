@@ -2,12 +2,12 @@
 # appear the number of times given by the number in the argument 
 
 
-def character_count(number, string)
+def character_count(given_number, string)
 	if !string.is_a?(String)
 		p "Please enter string."
 	end
 
-	if !number.is_a?(Integer)
+	if !given_number.is_a?(Integer)
 		p "Please enter a number."
 	end
 	
@@ -21,16 +21,12 @@ def character_count(number, string)
 		end
 	end
 	
-	times = 0
+	letter_occurances = 0
 
 	counter.values.each do |value|
-		if value == number
-			times += 1
+		if value == given_number
+			letter_occurances += 1
 		end
 	end
-times
+	letter_occurances
 end
-
-p character_count(5, "aaaaabbc")
-p character_count(3, "nnnaabbbii")
-p character_count(2, "aabbccddee")
