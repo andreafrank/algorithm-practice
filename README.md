@@ -1,2 +1,2 @@
 # algorithm-practice
-Practice
+Just what it says... Algorithm practice.
