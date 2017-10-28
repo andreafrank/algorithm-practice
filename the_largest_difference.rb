@@ -11,13 +11,13 @@
 
 
 def largest_difference(given_arr)
-	if given_arr.is_a? Array
+	if given_arr.is_a? Array && given_arr.length > 1
 
 		min = given_arr.first
 		max = given_arr.first
 
 		given_arr.each do |number|
-			if number.is_a? Integer
+			if number.is_a? Integer #also can use FixNum? to be researched
 
 				if number < min
 					min = number
