@@ -1,28 +1,27 @@
 # Given an array, output true or false if elements in array are a palindrome
 
 
+# nonrecursive
 def palindrome(given_array)
-	arr_length = given_array.length
-
-	if arr_length.even?
-		split_arr = given_array.each_slice(arr_length/2) { |arr| p arr }
-		
-	elsif arr_length.odd?
-		# chop off the middle element
-		p arr_length/2 
-	else 
-		p 'something went wrong. please try again.'
+	if given_array.reverse == given_array
+		true
+	else
+		false
 	end
-
-	# arr_length = given_array.length
-
-	# if given_array.first == 
-
-
-
-
 end
 
-palindrome([1, 2, 3, 5, 3, 2, 1])
-palindrome([2, 3, 5, 5, 3, 2])
+# recursive
+def recursive_palindrome(given_array)
+	
+end
+
+# to do: write method using no built in methods
+
+p palindrome([1, 2, 3, 5, 3, 2, 1])
+p palindrome([2, 3, 5, 5, 3, 2])
+p palindrome([1, 2, 3, 6, 7])
+
+p recursive_palindrome([1, 2, 3, 5, 3, 2, 1])
+p recursive_palindrome([2, 3, 5, 5, 3, 2])
+p recursive_palindrome([1, 2, 3, 6, 7])
 
