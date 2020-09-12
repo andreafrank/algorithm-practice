@@ -42,6 +42,5 @@ var isPalindrome = function(s) {
 // Output: false
  
 
-Constraints:
-
-s consists only of printable ASCII characters.
+// Constraints:
+// consists only of printable ASCII characters.
