@@ -8,13 +8,12 @@
 
 
 var restoreString = function(s, indices) {
-    var keys = indices;
     var values = s.split('');
-    var result = {}
+    var result = {};
     
-    keys.forEach((key, i) => result[key] = values[i]);
+    indices.forEach((index, i) => result[index] = values[i]);
         return Object.values(result).join('');
 };
 
-// Runtime: 80 ms, faster than 96.33% of JavaScript online submissions for Shuffle String.
-// Memory Usage: 40.8 MB, less than 15.76% of JavaScript online submissions for Shuffle String.
+// Runtime: 88 ms, faster than 77.92% of JavaScript online submissions for Shuffle String.
+// Memory Usage: 40.4 MB, less than 37.61% of JavaScript online submissions for Shuffle String.
